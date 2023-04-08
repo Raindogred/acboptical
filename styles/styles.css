@@ -126,13 +126,11 @@ section {
     float: right;
     max-width: 500px;
     padding: 10px;
-
 }
 
 .img_left {
     float: left;
     max-width: 500px;
-
 }
 
 #about {
@@ -143,7 +141,6 @@ section {
 #services {
     padding-top: 100px;
     background-color: rgb(251, 214, 199);
-
 }
 
 #services ul {
@@ -153,15 +150,10 @@ section {
     padding: 10px;
     max-width: 100%;
     color: rgb(79, 93, 117);
-    /* set a max width for the ul elements */
-    /*margin: 0 auto;*/
-    /* center the ul elements */
 }
 
 #contact {
     background-color: #fff;
-
-
 }
 
 .services {
@@ -175,7 +167,6 @@ section {
     padding-left: 20px;
     flex-basis: 20%;
     word-wrap: break-word;
-    /*margin-bottom: 2rem;*/
     line-height: 250%;
 }
 
@@ -183,7 +174,6 @@ section {
     padding-bottom: 25px;
     margin: 0;
     padding: 0;
-
 }
 
 footer {
