@@ -1,0 +1,280 @@
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+/* Import Open Sans font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.4em;
+    text-decoration-thickness: 120%;
+}
+
+p {
+    color: rgb(79, 93, 117);
+    padding: 10px;
+}
+
+header {
+    height: 100vh;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    background-image: url('../images/abc_kids_sm.jpg');
+}
+
+.logo {
+    float: left;
+    margin: 10px 20px;
+}
+
+nav {
+    float: right;
+    position: fixed;
+    background-color: rgb(79, 93, 117);
+    width: 100%;
+    opacity: 0.8;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: darkslategray;
+}
+
+nav .active {
+    background-color: chartreuse;
+}
+
+.hero {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(239, 131, 84);
+    background-color: rgba(237, 235, 235, 0.8);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: rgb(239, 131, 84);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF69B4;
+}
+
+section {
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.img_right {
+    float: right;
+    max-width: 500px;
+    padding: 10px;
+
+}
+
+.img_left {
+    float: left;
+    max-width: 500px;
+
+}
+
+#about {
+    background-color: #fff;
+    text-align: left;
+}
+
+#services {
+    padding-top: 100px;
+    background-color: rgb(251, 214, 199);
+
+}
+
+#services ul {
+
+    white-space: normal;
+    text-align: left;
+    padding: 10px;
+    max-width: 100%;
+    color: rgb(79, 93, 117);
+    /* set a max width for the ul elements */
+    /*margin: 0 auto;*/
+    /* center the ul elements */
+}
+
+#contact {
+    background-color: #fff;
+
+
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-category {
+    padding-top: 10px;
+    padding-left: 20px;
+    flex-basis: 20%;
+    word-wrap: break-word;
+    /*margin-bottom: 2rem;*/
+    line-height: 250%;
+}
+
+#services .services-heading {
+    padding-bottom: 25px;
+    margin: 0;
+    padding: 0;
+
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(79, 93, 117);
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    padding-top: 16px;
+}
+
+aside {
+    float: right;
+}
+
+article {
+    padding-top: 10px;
+    float: left;
+}
+
+/* Rules for desktop screens */
+/* Existing rules here */
+
+@media only screen and (max-width: 768px) {
+
+    /* Rules for tablet screens */
+    header {
+        height: 50vh;
+        background-size: contain;
+    }
+
+    nav {
+        position: static;
+        opacity: 1;
+        background-color: rgba(79, 93, 117, 0.9);
+        margin-top: 50vh;
+    }
+
+    nav ul {
+        position: static;
+        top: auto;
+        transform: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .logo {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .img_right,
+    .img_left {
+        max-width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* Rules for mobile screens */
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    nav li a {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    .service-category {
+        flex-basis: 100%;
+        font-size: 0.8em;
+        line-height: 150%;
+    }
+
+    #services {
+        height: auto;
+    }
+
+    .section-container {
+        height: calc(100vh - 80px);
+    }
+}
