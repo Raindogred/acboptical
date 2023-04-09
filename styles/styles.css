@@ -55,6 +55,7 @@ nav {
     background-color: rgb(79, 93, 117);
     width: 100%;
     opacity: 0.8;
+    z-index: 99;
 }
 
 nav ul {
@@ -126,11 +127,13 @@ section {
     float: right;
     max-width: 500px;
     padding: 10px;
+
 }
 
 .img_left {
     float: left;
     max-width: 500px;
+
 }
 
 #about {
@@ -138,42 +141,44 @@ section {
     text-align: left;
 }
 
-#services {
-    padding-top: 100px;
-    background-color: rgb(251, 214, 199);
-}
-
-#services ul {
-
-    white-space: normal;
-    text-align: left;
-    padding: 10px;
-    max-width: 100%;
-    color: rgb(79, 93, 117);
-}
-
 #contact {
     background-color: #fff;
 }
 
-.services {
+.services-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    background-color: rgb(79, 93, 117);
+    height: 100vh;
+    width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 80%;
 }
 
-.service-category {
-    padding-top: 10px;
-    padding-left: 20px;
-    flex-basis: 20%;
-    word-wrap: break-word;
-    line-height: 250%;
+.services-wrapper {
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-#services .services-heading {
-    padding-bottom: 25px;
-    margin: 0;
-    padding: 0;
+.services-wrapper img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#services ul li {
+    color: white;
+}
+
+#services ul li:first-child {
+    font-size: 2em;
+    color: white;
+    list-style-type: none;
+    padding-bottom: 10px;
 }
 
 footer {
@@ -266,5 +271,15 @@ article {
 
     .section-container {
         height: calc(100vh - 80px);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .services-wrapper {
+        width: 100%;
     }
 }
